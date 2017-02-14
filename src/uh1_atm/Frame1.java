@@ -73,6 +73,7 @@ public class Frame1 extends javax.swing.JFrame {
         if(tfpin==1234){
             this.setVisible(false);
             new ATM().setVisible(true);
+            
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
