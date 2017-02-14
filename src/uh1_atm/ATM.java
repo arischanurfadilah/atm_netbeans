@@ -31,20 +31,19 @@ public class ATM extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         keluar = new javax.swing.JButton();
         tarik = new javax.swing.JButton();
         ceksaldo = new javax.swing.JButton();
         setor = new javax.swing.JButton();
         bantuan = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel1.setText("Pilih Transaksi");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(160, 20, 90, 14);
-
+        keluar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         keluar.setText("Keluar");
         keluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,6 +53,7 @@ public class ATM extends javax.swing.JFrame {
         getContentPane().add(keluar);
         keluar.setBounds(130, 200, 120, 40);
 
+        tarik.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         tarik.setText("Penarikan");
         tarik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,6 +63,7 @@ public class ATM extends javax.swing.JFrame {
         getContentPane().add(tarik);
         tarik.setBounds(50, 140, 120, 40);
 
+        ceksaldo.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         ceksaldo.setText("Cek Saldo");
         ceksaldo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,8 +71,9 @@ public class ATM extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ceksaldo);
-        ceksaldo.setBounds(50, 70, 120, 40);
+        ceksaldo.setBounds(50, 80, 120, 40);
 
+        setor.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         setor.setText("Penyetoran");
         setor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,8 +81,9 @@ public class ATM extends javax.swing.JFrame {
             }
         });
         getContentPane().add(setor);
-        setor.setBounds(210, 70, 120, 40);
+        setor.setBounds(210, 80, 120, 40);
 
+        bantuan.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         bantuan.setText("Bantuan");
         bantuan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +93,22 @@ public class ATM extends javax.swing.JFrame {
         getContentPane().add(bantuan);
         bantuan.setBounds(210, 140, 120, 40);
 
-        setBounds(0, 0, 416, 339);
+        jPanel2.setBackground(new java.awt.Color(51, 102, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ATM BRI", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jLabel1.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 24)); // NOI18N
+        jLabel1.setText("Pilih Transaksi");
+        jPanel2.add(jLabel1);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(20, 10, 350, 250);
+
+        jPanel3.setBackground(new java.awt.Color(153, 153, 255));
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(-10, 0, 400, 280);
+
+        setBounds(0, 0, 403, 315);
     }// </editor-fold>//GEN-END:initComponents
 
     private void ceksaldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ceksaldoActionPerformed
@@ -165,6 +183,8 @@ public class ATM extends javax.swing.JFrame {
     private javax.swing.JButton bantuan;
     private javax.swing.JButton ceksaldo;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JButton keluar;
     private javax.swing.JButton setor;
     private javax.swing.JButton tarik;
